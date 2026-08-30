@@ -21,10 +21,10 @@ const LIFF_ID = process.env.NEXT_PUBLIC_LIFF_ID || '2011335675-iuw7oMqv';
  * 如果不提供，將使用 DEFAULT_BUSINESS_CARD 的預設資料
  */
 const customCardData: Partial<BusinessCardData> = {
-  name: '蘇建誠',
-  title: '特殊裝備與婚宴接駁專員',
+  name: '蘇謹誠',
+  title: '長期租賃 機場接送',
   services: '機場接送、商務接送、包車旅遊、婚禮與活動包車、服務接駁、長租、短租、企業交通',
-  phone: '0912-345-678',
+  phone: '0935-625-555',
   // 可以覆寫其他欄位...
 };
 
