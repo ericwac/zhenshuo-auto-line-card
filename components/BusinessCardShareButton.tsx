@@ -56,8 +56,25 @@ export function BusinessCardShareButton({
 
     // 檢查是否支援 shareTargetPicker
     if (!liff.isApiAvailable('shareTargetPicker')) {
-      setShareError('您的 LINE 版本不支援此功能，請更新至最新版本');
-      return;
+      // 嘗試使用舊版的 sendMessages API
+      try {
+        const flexMessage = generateBusinessCardFlex(cardData);
+        await liff.sendMessages([
+          {
+            type: 'flex',
+            altText: flexMessage.altText,
+            contents: flexMessage.contents,
+          },
+        ]);
+        console.log('使用 sendMessages 發送成功');
+        onShareSuccess?.();
+        setIsSharing(false);
+        return;
+      } catch (sendError) {
+        setShareError('您的 LINE 版本不支援此功能，請更新至最新版本');
+        setIsSharing(false);
+        return;
+      }
     }
 
     setIsSharing(true);
