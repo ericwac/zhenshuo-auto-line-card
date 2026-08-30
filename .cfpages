@@ -1,0 +1,10 @@
+# Build configuration for Cloudflare Pages
+
+# Next.js requires this environment variable for static export
+# Cloudflare Pages will automatically use this
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Environment variables
+# Set NEXT_PUBLIC_LIFF_ID in Cloudflare Pages dashboard
