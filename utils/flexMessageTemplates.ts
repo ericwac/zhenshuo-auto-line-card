@@ -4,7 +4,36 @@
  */
 
 import { BusinessCardData } from '@/types/businessCard';
-import type { FlexMessage, FlexBubble } from '@line/liff';
+
+/**
+ * Flex Message 型別定義（根據 LINE API）
+ */
+interface FlexMessage {
+  type: 'flex';
+  altText: string;
+  contents: FlexBubble;
+}
+
+interface FlexBubble {
+  type: 'bubble';
+  size?: 'nano' | 'micro' | 'kilo' | 'mega' | 'giga';
+  header?: FlexBox;
+  hero?: FlexBox;
+  body?: FlexBox;
+  footer?: FlexBox;
+}
+
+interface FlexBox {
+  type: 'box';
+  layout: 'horizontal' | 'vertical' | 'baseline';
+  contents: any[];
+  backgroundColor?: string;
+  paddingAll?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
+  margin?: string;
+  spacing?: string;
+}
 
 /**
  * 預設的振碩汽車名片資料
