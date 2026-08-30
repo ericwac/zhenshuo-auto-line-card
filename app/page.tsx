@@ -14,7 +14,7 @@ import { BusinessCardData } from '@/types/businessCard';
  * ⚠️ 重要：請將此 LIFF ID 替換為您在 LINE Developers Console 建立的實際 LIFF ID
  * 格式範例：'1234567890-abcdefgh'
  */
-const LIFF_ID = process.env.NEXT_PUBLIC_LIFF_ID || 'YOUR_LIFF_ID_HERE';
+const LIFF_ID = process.env.NEXT_PUBLIC_LIFF_ID || '2011335675-iuw7oMqv';
 
 /**
  * 自訂名片資料（選填）
