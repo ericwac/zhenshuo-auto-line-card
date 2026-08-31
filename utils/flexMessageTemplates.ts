@@ -259,6 +259,17 @@ export function generateBusinessCardFlex(
             ]
           : []),
         {
+          type: 'button',
+          action: {
+            type: 'uri',
+            label: '📤 分享此名片',
+            uri: `https://liff.line.me/2011335675-iuw7oMqv`,
+          },
+          style: 'link',
+          color: '#E53E3E',
+          margin: 'sm',
+        },
+        {
           type: 'box',
           layout: 'vertical',
           contents: [
