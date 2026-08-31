@@ -259,23 +259,12 @@ export function generateBusinessCardFlex(
             ]
           : []),
         {
-          type: 'button',
-          action: {
-            type: 'uri',
-            label: '📤 分享此名片',
-            uri: `https://liff.line.me/2011335675-iuw7oMqv`,
-          },
-          style: 'link',
-          color: '#E53E3E',
-          margin: 'sm',
-        },
-        {
           type: 'box',
           layout: 'vertical',
           contents: [
             {
               type: 'text',
-              text: '👆 使用「分享」功能將此名片轉發給好友',
+              text: '👆 長按此名片使用 LINE「轉傳」功能分享給好友',
               size: 'xxs',
               color: '#999999',
               align: 'center',
