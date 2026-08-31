@@ -205,6 +205,31 @@ export function generateBusinessCardFlex(
                   } as const,
                 ]
               : []),
+            ...(cardData.companyTaxId
+              ? [
+                  {
+                    type: 'box',
+                    layout: 'horizontal',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: '統編',
+                        size: 'sm',
+                        color: '#aaaaaa',
+                        flex: 1,
+                      },
+                      {
+                        type: 'text',
+                        text: cardData.companyTaxId,
+                        wrap: true,
+                        color: '#666666',
+                        size: 'sm',
+                        flex: 4,
+                      },
+                    ],
+                  } as const,
+                ]
+              : []),
           ],
         },
         {
@@ -259,12 +284,23 @@ export function generateBusinessCardFlex(
             ]
           : []),
         {
+          type: 'button',
+          action: {
+            type: 'uri',
+            label: '分享此名片給好友',
+            uri: 'https://liff.line.me/2011335675-iuw7oMqv',
+          },
+          style: 'link',
+          color: '#E53E3E',
+          margin: 'sm',
+        },
+        {
           type: 'box',
           layout: 'vertical',
           contents: [
             {
               type: 'text',
-              text: '👆 長按此名片使用 LINE「轉傳」功能分享給好友',
+              text: '👆 點擊「分享此名片給好友」即可轉發給你的好友',
               size: 'xxs',
               color: '#999999',
               align: 'center',
