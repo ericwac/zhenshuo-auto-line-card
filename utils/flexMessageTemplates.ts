@@ -244,6 +244,20 @@ export function generateBusinessCardFlex(
               } as const,
             ]
           : []),
+        ...(cardData.websiteUrl
+          ? [
+              {
+                type: 'button',
+                action: {
+                  type: 'uri',
+                  label: '🌐 官方網站',
+                  uri: cardData.websiteUrl,
+                },
+                style: 'link',
+                margin: 'sm',
+              } as const,
+            ]
+          : []),
         {
           type: 'box',
           layout: 'vertical',
