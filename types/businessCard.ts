@@ -18,8 +18,10 @@ export interface BusinessCardData {
   email: string;
   /** 公司地址 */
   address?: string;
-  /** LINE 官方帳號 ID (例如: @abc1234) */
+  /** LINE 官方帳號 ID (例如: @abc1234) 或完整網址 */
   lineOfficialId?: string;
+  /** 公司網站網址 */
+  websiteUrl?: string;
   /** 公司品牌色 (Hex 色碼) */
   brandColor?: string;
   /** 公司 Logo URL */

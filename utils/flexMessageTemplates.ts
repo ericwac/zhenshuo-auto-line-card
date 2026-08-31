@@ -48,6 +48,7 @@ export const DEFAULT_BUSINESS_CARD: BusinessCardData = {
   email: 'service@zhenshuo-auto.com',
   address: '臺中市霧峰區坑口里中正路575之10號',
   lineOfficialId: 'https://lin.ee/y8zGwYc',
+  websiteUrl: 'https://socialflow.tw/',
   brandColor: '#1E3A8A',
   // 部署後請將此網址更新為您的 Cloudflare Pages 網址
   logoUrl: typeof window !== 'undefined' 
