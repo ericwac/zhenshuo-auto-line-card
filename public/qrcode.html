@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>振碩汽車 - 名片 QR Code</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            color: #1E3A8A;
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin: 0 0 30px 0;
+            font-size: 16px;
+        }
+        .qr-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code {
+            width: 250px;
+            height: 250px;
+        }
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f9ff;
+            border-radius: 12px;
+            text-align: left;
+        }
+        .info h3 {
+            margin: 0 0 15px 0;
+            color: #1E3A8A;
+            font-size: 18px;
+        }
+        .info p {
+            margin: 8px 0;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .contact {
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+        .footer {
+            margin-top: 20px;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>振碩汽車租賃</h1>
+        <p class="subtitle">掃描 QR Code 查看電子名片</p>
+        
+        <div class="qr-container">
+            <img class="qr-code" 
+                 src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://liff.line.me/2011335675-iuw7oMqv" 
+                 alt="電子名片 QR Code">
+        </div>
+        
+        <div class="info">
+            <h3>📱 聯絡資訊</h3>
+            <p><span class="contact">蘇謹誠</span></p>
+            <p>長期租賃 機場接送</p>
+            <p>📞 0935-625-555</p>
+            <p>🌐 <a href="https://socialflow.tw/" style="color: #1E3A8A; text-decoration: none;">socialflow.tw</a></p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 振碩汽車租賃有限公司</p>
+        <p>統編：60531668</p>
+    </div>
+</body>
+</html>
